@@ -147,7 +147,6 @@ var domLocation = [
     gameOver = 0,
     userInput = "",
     i = 0,
-    tween = TweenLite.tween,
     drop = false,
     use = false,
 
