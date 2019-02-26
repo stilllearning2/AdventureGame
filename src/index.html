@@ -1,1 +1,97 @@
+<!doctype html>
+<html lang = "en">
+<head>
+    <meta charset = "utf-8">
+    <meta name="description" content="A Scavenger Hunt in Seattle">
+    <meta name="author" content="Craig Alford for PROG 209 at Bellevue college in Winter, 2019">
+    
+    <title>The Hunt</title>
 
+    <link rel="stylesheet" type="text/css" href="styles.css" >
+</head>
+<body>
+    <div id="wrapper">
+        <div id="informationWrapper">
+            <div class="infoDivs" id="title">Seattle Scavenger Information</div>
+            <div class="infoDivs">
+                <label id="lblName">Location:</label>
+                <label id="name"></label>
+            </div>
+            <div class="infoDivs">
+                <label id="lblDescription">Description:</label>
+                <label id="description"></label>
+            </div>
+            <div class="infoDivs" >
+                <div id="itemList" >Scavenger List</div>
+                <div id="backpack" >Backpack Contents</div>
+            </div>
+            <div class="infoDivs">
+                <label>Items at this location:</label>
+                <label id="items"></label>
+            </div>
+            <div class="infoDivs">
+                <label id="lblMinutesEnd">Game Ends (minutes):  </label>
+                <label id="minutesEnd"></label>
+                <br />
+                <label id="lblMinutesUsed">Minutes Used:  </label>
+                <label id="minutesUsed"></label>
+                <br />
+                <label id="lblMinutesRemain">Minutes Remaining:  </label>
+                <label id="minutesRemain"></label>
+            </div>
+            <div class="infoDivs">
+                <label id="lblResponse">Response:  </label>
+                <label id="response"></label>
+            </div>
+            <div class="infoDivs">
+                <label id="lblEntry">Enter action word: </label>
+                <input type="text" size = 15 id="entry" default="default">
+                <button id="btnEnter">Enter</button>
+            </div>
+            <div class="infoDivs">
+                <label id="action"></label>
+            </div>
+            <div class="infoDivs">
+                <button id="btnSave">Save Game</button>
+                <button id="btnStart">Start New Game</button>
+            </div>
+        </div> <!-- end of wrapper div -->
+
+        <div class="locations" id="loc0">
+            <img src="../images/locks.jpeg" alt="Boats moving through the locks" class="images" id="image0">
+        </div>
+        <div class="locations" id="loc1">
+            <img src="../images/zoo.jpeg" alt="Woodland Park Zoo entrance" class="images"   id="image1">
+        </div>
+        <div class="locations" id="loc2">
+            <img src="../images/gasworks.jpeg" alt="Metal silos and interconnected pipes" class="images" id="image2">
+        </div>
+        <div class="locations" id="loc3">
+            <img src="../images/science.jpeg" alt="Dinosaur exhibit at Pacific Science Center" class="images" id="image3">
+        </div>
+        <div class="locations" id="loc4">
+            <img src="../images/industry.jpeg" alt="very large older building" class="images" id="image4">
+        </div>
+        <div class="locations" id="loc5">
+            <img src="../images/arboretum.jpeg" alt="Pink rhododendrons in bloom" class="images" id="image5">
+        </div>
+        <div class="locations" id="loc6">
+            <img src="../images/market.jpeg" alt="A large farmer's market" class="images" id="image6">
+        </div>
+        <div class="locations" id="loc7">           
+            <img src="../images/library.jpeg" alt="Bulging glass and steel building" class="images" id="image7">
+        </div>
+        <div class="locations" id="loc8">
+            <img src="../images/pioneer.jpeg" alt="blocks long mall on a pedestian street" class="images" id="image8">
+        </div>
+
+        <!-- abosolute placement div -->
+        <img src="../images/riderLeft.png" alt="bicycler riding right to left" id="riderLeft">
+        <img src="../images/riderRight.png" alt="bicycler riding left to right" id="riderRight">
+    </div>
+
+    <!-- load Content Delivery Network (CDN) scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenLite.min.js"></script>
+    <script src="script.js" ></script>
+</body>
+</html>
