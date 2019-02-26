@@ -235,7 +235,7 @@ function riderEnterLeft () {
     riderLeftElement.left = left[1] + "px";
     riderLeftElement.style.visibility = "display",
     // move rider to center of current location
-    tween = TweenLite.to(riderLeftElement, 0.75, {
+    TweenLite.to(riderLeftElement, 0.75, {
         top: center[0],
         left: center[1],
         ease: Power1.easeIn
@@ -244,7 +244,7 @@ function riderEnterLeft () {
 
 function riderLeaveLeft() {
     // move rider to right of location
-    tween = TweenLite.to(riderLeftElement, 0.75, {
+    TweenLite.to(riderLeftElement, 0.75, {
         top: right[0],
         left: right[1],
         ease: Power1.easeOut
@@ -262,7 +262,7 @@ function riderEnterRight() {
     riderRightElement.left = currentLeftX + "px";
     riderRightElement.top = currentLeftY + "px";
     // move rider to center of current location
-    tween = TweenLite.to(riderRightElement, 0.75, {
+    TweenLite.to(riderRightElement, 0.75, {
         top: currentCenterY,
         left: currentCenterX,
         ease: Power1.easeIn
@@ -271,7 +271,7 @@ function riderEnterRight() {
 
 function riderLeaveRight() {
     // move rider to right of location
-    tween = TweenLite.from(riderRightElement, 0.75, {
+    TweenLite.from(riderRightElement, 0.75, {
         top: currentLeftY,
         left: currentLeftX,
         ease: Power1.easeOut
@@ -286,7 +286,7 @@ function riderMoveRight() {
     // lower current location so rider can come on top
     currentLocationElement.style.zIndex = 1;
     // move rider to right of location
-    tween = TweenLite.to(riderLeftElement, 0.75, {
+    TweenLite.to(riderLeftElement, 0.75, {
         top: currentCenterY,
         left: currentCenterX,
         ease: Power1.easeOut
@@ -299,7 +299,7 @@ function riderMoveLeft() {
     // lower current location so rider can come on top
     currentLocationElement.style.zIndex = 1;
     // move rider to right of location
-    tween = TweenLite.to(riderRightElement, 0.75, {
+    TweenLite.to(riderRightElement, 0.75, {
         top: currentLeftY,
         left: currentLeftX,
         ease: Power1.easeOut
