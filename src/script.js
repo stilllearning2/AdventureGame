@@ -234,19 +234,19 @@ function riderEnterLeft () {
     riderLeftElement.left = left[1] + "px";
     riderLeftElement.style.visibility = "display",
     // move rider to center of current location
-    TweenLite.to(riderLeftElement, 0.75, {
-        top: center[0],
-        left: center[1],
-        ease: Power1.easeIn
+    //TweenLite.to(riderLeftElement, 0.75, {
+    //    top: center[0],
+    //    left: center[1],
+    //    ease: Power1.easeIn
     });
 };
 
 function riderLeaveLeft() {
     // move rider to right of location
-    TweenLite.to(riderLeftElement, 0.75, {
-        top: right[0],
-        left: right[1],
-        ease: Power1.easeOut
+    //TweenLite.to(riderLeftElement, 0.75, {
+    //    top: right[0],
+    //    left: right[1],
+    //    ease: Power1.easeOut
     }),
     // hide rider
     riderLeftElement.style.visibility = "hidden";
@@ -261,19 +261,19 @@ function riderEnterRight() {
     riderRightElement.left = currentLeftX + "px";
     riderRightElement.top = currentLeftY + "px";
     // move rider to center of current location
-    TweenLite.to(riderRightElement, 0.75, {
-        top: currentCenterY,
-        left: currentCenterX,
-        ease: Power1.easeIn
+    //TweenLite.to(riderRightElement, 0.75, {
+    //    top: currentCenterY,
+    //    left: currentCenterX,
+    //    ease: Power1.easeIn
     });
 };
 
 function riderLeaveRight() {
     // move rider to right of location
-    TweenLite.from(riderRightElement, 0.75, {
-        top: currentLeftY,
-        left: currentLeftX,
-        ease: Power1.easeOut
+    //TweenLite.from(riderRightElement, 0.75, {
+    //    top: currentLeftY,
+    //    left: currentLeftX,
+    //    ease: Power1.easeOut
     });
     // hide rider
     riderLeftElement.style.visibility = "hidden";
@@ -285,10 +285,10 @@ function riderMoveRight() {
     // lower current location so rider can come on top
     currentLocationElement.style.zIndex = 1;
     // move rider to right of location
-    TweenLite.to(riderLeftElement, 0.75, {
-        top: currentCenterY,
-        left: currentCenterX,
-        ease: Power1.easeOut
+    //TweenLite.to(riderLeftElement, 0.75, {
+    //    top: currentCenterY,
+    //    left: currentCenterX,
+    //    ease: Power1.easeOut
     });
     // restore previous location to default level
     previousLocationElement.style.zIndex = 3;
@@ -298,10 +298,10 @@ function riderMoveLeft() {
     // lower current location so rider can come on top
     currentLocationElement.style.zIndex = 1;
     // move rider to right of location
-    TweenLite.to(riderRightElement, 0.75, {
-        top: currentLeftY,
-        left: currentLeftX,
-        ease: Power1.easeOut
+    //TweenLite.to(riderRightElement, 0.75, {
+    //    top: currentLeftY,
+    //    left: currentLeftX,
+    //    ease: Power1.easeOut
     });
     // hide rider
     riderLeftElement.style.visibility = "hidden";
